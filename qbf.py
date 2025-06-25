@@ -37,7 +37,7 @@ def search_counter(n, d):
 
     builder.addUniversalGate(no_col)
 
-    deg = builder.maxDegree(d)
+    deg = builder.maxDegree(d)  # technically this only ensures that Delta <= d, but even if Delta < d not having a total coloring with d + 2 is sill a counter example to the conjecture
 
     builder.addExistentialGate(deg)
 
